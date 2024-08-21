@@ -1,0 +1,92 @@
+@media(min-width:786px) {
+    .nav .container .nav_links ul li {
+        display: inherit;
+    }
+
+    .nav .container {
+        padding: 25px 80px;
+    }
+
+    .section_one_content {
+
+        text-align: start;
+        display: grid;
+        justify-content: space-between;
+        grid-template-areas:
+            "section_one_text section_one_img"
+            "section_one_btns section_one_img";
+    }
+
+    .section_one_content .section_one_btns {
+        width: 60%;
+    }
+
+    .section_one_content .section_one_text {
+        /* background-color: tomato; */
+        padding: 0px 50px;
+    }
+
+    .section_one_content .section_one_img {
+        width: 100%;
+        /* background-color: chartreuse; */
+    }
+    
+    .chef_section .chefs_section_body {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .chef_section .chefs_section_body .chef_one,
+    .chef_section .chefs_section_body .chef_two,
+    .chef_section .chefs_section_body .chef_three {
+        width: 31.5%;
+    }
+
+    .gallery_section .gallery_section_body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 10px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "pizza beef burger"
+            "pizza beef burger"
+            "pizza beef burger"
+            "pizza_two beef chicken"
+            "pizza_two beef chicken"
+            "pizza_two beef chicken"
+            "pizza_two beef kebab"
+            "pizza_two frittata kebab"
+            "pizza_two frittata kebab"
+            ". frittata kebab"
+            ". frittata ."
+        ;
+    }
+
+    .contacts_section .contacts_body .contacts_info {
+        display: grid;
+        grid-template-areas:
+            "address email"
+            "call open";
+        column-gap: 15px;
+    }
+
+    .contacts_form {
+        display: grid;
+        column-gap: 20px;
+        grid-template-areas:
+            "name email"
+            "subject subject"
+            "message message"
+            "submit submit";
+    }
+
+    .footer_body {
+        display: grid;
+        grid-template-areas: "item1 item2 item2 item3";
+    }
+
+    .footer_body {
+        padding: 40px;
+    }
+}
